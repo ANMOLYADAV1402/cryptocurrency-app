@@ -1,0 +1,69 @@
+/* Exchange Card Styles */
+.exchange-card {
+  width: 180px;
+  padding: 10px;
+  border-radius: 1rem;
+  border: 1px solid #cacaca;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.exchange-card:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.exch-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.exch-name {
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exch-header img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.exch-price {
+  margin-bottom: 5px;
+}
+
+.exch-value {
+  font-weight: 500;
+}
+
+.exchanges-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 580px) {
+  .exchange-card {
+    width: 150px;
+  }
+
+  .exchanges-wrapper {
+    gap: 10px;
+  }
+
+  .exch-price {
+    font-size: 15px;
+  }
+
+  .exch-24h-vol {
+    font-size: 14px;
+  }
+}

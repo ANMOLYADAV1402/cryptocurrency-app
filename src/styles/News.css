@@ -1,0 +1,12 @@
+.news-container {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.news-post-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
